@@ -1,0 +1,11 @@
+# Bash-скрипты всегда с окончаниями строк LF,
+# иначе в Linux будет ошибка: $'\r': command not found
+*.sh    text eol=lf
+*.bash  text eol=lf
+
+# PowerShell и BAT для Windows Server — с CRLF
+*.ps1   text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+*.pdf   binary
